@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Genre Classification</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url("static/images/music.jpg");
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 50px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      form {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      input[type="text"] {
+        width: 100px;
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: #cccccc;
+      }
+
+      input[type="submit"] {
+        background-color: grey;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      input[type="submit"]:hover {
+        background-color: black;
+      }
+
+      a {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: #333;
+        text-decoration: none;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Let's see what kind of music you like to listen to</h1>
+    <div class="container">
+      <form method="post" action="/">
+        Pitch: <input type="text" name="Pitch" /><br />
+        Rhythm : <input type="text" name="Rhythm" /> Color(light to dark) :
+        <input type="text" name="Color" /><br />
+        <input type="submit" value="Predict Genre" />
+      </form>
+    </div>
+
+    <footer>
+      <p>@2024</p>
+    </footer>
+  </body>
+</html>
